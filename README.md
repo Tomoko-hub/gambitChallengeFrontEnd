@@ -69,3 +69,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # gambitChallengeFrontEnd
+
+Pages are divided into two main categories: user pages and results pages.
+
+JWT is used for authentication.
+User authentication uses the user's email address and password.
+
+Page transitions are setted by react-router-dom.
+There are seven pages in total.
+home, user/register, user/login, /result/create, result/:id, /result/update, /result/detlete
+ 

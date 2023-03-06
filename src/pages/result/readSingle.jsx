@@ -1,6 +1,6 @@
 import React from 'react'
-import { useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useState,useEffect } from 'react'
+import { useParams,Link } from 'react-router-dom'
 
 const ReadSingle = () => {
   const params = useParams()
@@ -9,7 +9,7 @@ const ReadSingle = () => {
   const [result, setResult] = useState("")
   const [description, setDescription] = useState("")
 
-  //useEffect(()=>{
+  useEffect(()=>{
     const getSingleResult=async()=>{
       const response = await fetch(`http://localhost:5000/result/${params.id}`)
       const jsonResponse = await response.json()
@@ -18,14 +18,17 @@ const ReadSingle = () => {
         setDescription(jsonResponse.singleResult.result)
     }
     getSingleResult()
-  //},[params.id])
+  },[params.id])
 
   return (
     <div>
-      <h1>{console.log(params.id)}</h1>
-        <p>{register}</p>
-        <p>{result}</p>
-        <p>{description}</p>
+      <p>{register}</p>
+      <p>{result}</p>
+      <p>{description}</p>
+      <div>
+        <Link to={`/result/update/${params.id}`}>Update Result</Link>
+        <Link to={`/result/delete/${params.id}`}>Delete Result</Link>
+      </div>
     </div>
   )
 }

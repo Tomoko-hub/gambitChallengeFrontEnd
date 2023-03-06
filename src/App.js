@@ -5,6 +5,8 @@ import Login from "./pages/user/Login"
 import ReadAllResuts from './pages/result/ReadAllResuts';
 import ReadSingle from './pages/result/ReadSingle';
 import Create from './pages/result/Create';
+import Update from './pages/result/Update';
+import Delete from './pages/result/Delete';
 
 function App() {
   return (
@@ -29,6 +31,14 @@ function App() {
         <Route
           path="/result/create"
           element={<Create />}
+         />
+        <Route
+          path="/result/update/:id"
+          element={<Update />}
+         />
+        <Route
+          path="/result/delete/:id"
+          element={<Delete />}
          />
       </Routes>
     </BrowserRouter>

@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 
 
 const ReadAllResuts = () => {
-
     const [allResults, setAllResults] = useState("")
 
     useEffect(()=>{
@@ -19,12 +18,12 @@ const ReadAllResuts = () => {
 
   return (
     <div>
-        {allResults && allResults.allResults.map(item =>
-            <Link to="" key={item._id}> 
-                <div key={item._id}>
-                    <h2>{item.register}</h2>
-                    <h3>{item.result}</h3>
-                    <p>{item.description}</p>
+        {allResults && allResults.allResults.map(result =>
+            <Link to={`/result/${result._id}`} key={result._id}> 
+                <div key={result._id}>
+                    <h2>{result.register}</h2>
+                    <h3>{result.result}</h3>
+                    <p>{result.description}</p>
                 </div>
             </Link>    
         )}

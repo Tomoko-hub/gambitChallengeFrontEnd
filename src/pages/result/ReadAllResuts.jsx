@@ -17,7 +17,7 @@ const ReadAllResuts = () => {
 
 
   return (
-    <div>
+    <div className='grid-container-in'>
         {allResults && allResults.allResults.map(result =>
             <Link to={`/result/${result._id}`} key={result._id}> 
                 <div key={result._id}>

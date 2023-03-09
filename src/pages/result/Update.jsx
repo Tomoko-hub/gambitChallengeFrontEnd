@@ -47,6 +47,7 @@ const Update = () => {
 
   return (
     <div>
+      <h1 className='page-title'>Edit Result</h1>
       <form onSubmit={handleSubmit}>
         <input 
           value={register} onChange={(event)=> setRegister(event.target.value)}

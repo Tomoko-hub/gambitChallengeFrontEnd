@@ -47,6 +47,7 @@ const Delete = () => {
 
   return (
     <div>
+      <h1>Delete Result</h1>
       <form onSubmit={handleSubmit}>
         <h2>{register}</h2>
         <h3>{result}</h3>

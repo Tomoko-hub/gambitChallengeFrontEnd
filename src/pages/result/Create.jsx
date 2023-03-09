@@ -32,6 +32,7 @@ const Create = () => {
 
   return (
     <div>
+      <h1 className='page-title'>Create Result</h1>
       <form onSubmit={handleSubmit}>
         <input 
           value={register} onChange={(event)=> setRegister(event.target.value)}
@@ -42,7 +43,7 @@ const Create = () => {
         <textarea
           value={description} onChange={(event)=> setDescription(event.target.value)} 
           type="text" rows="15" name="description" placeholder='Some description.' />
-        <button>Create</button>
+        <button>Create Result</button>
       </form>
       
     </div>

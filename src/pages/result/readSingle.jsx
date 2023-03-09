@@ -25,7 +25,7 @@ const ReadSingle = () => {
       <p>{register}</p>
       <p>{result}</p>
       <p>{description}</p>
-      <div>
+      <div className='grid-container-si'>
         <Link to={`/result/update/${params.id}`}>Update Result</Link>
         <Link to={`/result/delete/${params.id}`}>Delete Result</Link>
       </div>

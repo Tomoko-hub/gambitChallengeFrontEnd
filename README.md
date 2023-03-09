@@ -78,4 +78,9 @@ User authentication uses the user's email address and password.
 Page transitions are setted by react-router-dom.
 There are seven pages in total.
 home, user/register, user/login, /result/create, result/:id, /result/update, /result/detlete
- 
+
+Here is deployed version: https://lambent-sunflower-f3abca.netlify.app/user/register
+
+Note to myself:
+I noticed login/register doesn't work well, I will figure it out.
+(-> after decoded JWT it does not work with my localmachine. Shall I change another way??)

@@ -79,7 +79,7 @@ Page transitions are setted by react-router-dom.
 There are seven pages in total.
 home, user/register, user/login, /result/create, result/:id, /result/update, /result/detlete
 
-Here is deployed version: https://lambent-sunflower-f3abca.netlify.app/user/register
+Here is deployed version: https://lambent-sunflower-f3abca.netlify.app
 
 Note to myself:
 I noticed login/register doesn't work well, I will figure it out.

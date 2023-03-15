@@ -85,4 +85,12 @@ Note to myself:
 I noticed login/register doesn't work well, I will figure it out.
 (-> after decoded JWT it does not work with my localmachine. Shall I change another way??)
 
+Error Description:
+Unable to log in and register
 
+Causes:
+Failed to issue token?
+
+Solution:
+1) Need to authenticate and store tokens individually?
+2) Change the authentication method.

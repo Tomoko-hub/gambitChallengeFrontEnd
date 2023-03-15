@@ -84,3 +84,5 @@ Here is deployed version: https://lambent-sunflower-f3abca.netlify.app/user/regi
 Note to myself:
 I noticed login/register doesn't work well, I will figure it out.
 (-> after decoded JWT it does not work with my localmachine. Shall I change another way??)
+
+

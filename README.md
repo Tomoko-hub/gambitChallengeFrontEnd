@@ -72,7 +72,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 Pages are divided into two main categories: user pages and results pages.
 
-JWT is used for authentication.
+JWT(Json Web Token) is used for authentication.
 User authentication uses the user's email address and password.
 
 Page transitions are setted by react-router-dom.
